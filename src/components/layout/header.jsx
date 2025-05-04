@@ -14,6 +14,9 @@ const Header = () => {
     const onClick = e => {
         console.log('click ', e);
         setCurrent(e.key);
+        if(e.key === "logout") {
+          handleLogout()
+        }
     }
     const navigate = useNavigate();
     const handleLogout = async () => {
@@ -69,7 +72,7 @@ const Header = () => {
             children: [
                 
                 {
-                    label: <span onClick={()=>handleLogout()}>LogOut</span>,
+                    label: <p>Logout</p>,
                     key: 'logout',
                 },
             ],
