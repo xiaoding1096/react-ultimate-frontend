@@ -1,0 +1,12 @@
+.user-form:nth-child(1){
+    margin-top: 50px;
+}
+.user-form-item {
+    margin: 20px;
+}
+
+.user-form-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
